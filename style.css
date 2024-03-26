@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hex-colors h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changecolor 5s infinite alternate;
+ 
+
+}
+.hex-colors h2{
+    font-size: 2rem;
+    margin-top: 15%;
+}
+
+@keyframes changecolor {
+    0% {color: indigo;
+    }
+    20% {color: red;
+    }
+    40% {color: blue;
+    }
+    60% {color: green;
+    }
+    80% {color: purple;
+    }
+    100% {color: palegreen;
+    }
+}
+
+@media (max-width:480px){
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+    .hex-colors h2{
+        font-size: 1.5rem;
+    }
+}
